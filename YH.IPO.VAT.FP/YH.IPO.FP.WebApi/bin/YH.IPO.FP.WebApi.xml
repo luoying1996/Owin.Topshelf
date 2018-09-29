@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>YH.IPO.FP.WebApi</name>
+    </assembly>
+    <members>
+        <member name="T:YH.IPO.FP.WebApi.WebApiResultAttribute">
+            <summary>
+            OnAction 重写 固定统一返回值
+            </summary>
+        </member>
+        <member name="T:YH.IPO.FP.WebApi.Enum.InfoKindEnum">
+            <summary>
+            发票种类  获取每种发票的库存信息
+            </summary>
+        </member>
+    </members>
+</doc>

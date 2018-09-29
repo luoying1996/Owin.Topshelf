@@ -1,0 +1,130 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>TopShelf.IPO.FP</name>
+    </assembly>
+    <members>
+        <member name="P:TopShelf.IPO.FP.AppConfig.ServicePrefix">
+            <summary>
+            服务名称前缀，用于标识一类服务，显示名称为:{ServicePrefix}_{ServiceName}
+            </summary>
+        </member>
+        <member name="P:TopShelf.IPO.FP.AppConfig.ServiceName">
+            <summary>
+            服务的描述信息
+            </summary>
+        </member>
+        <member name="P:TopShelf.IPO.FP.AppConfig.DisplayName">
+            <summary>
+            服务的显示名称
+            </summary>
+        </member>
+        <member name="P:TopShelf.IPO.FP.AppConfig.Description">
+            <summary>
+            服务的名称
+            </summary>
+        </member>
+        <member name="P:TopShelf.IPO.FP.AppConfig.HttpPort">
+            <summary>
+            设置该值时，表示开启WebAPI服务
+            </summary>
+        </member>
+        <member name="M:TopShelf.IPO.FP.Extenion.AliasNameAttribute.#ctor(System.String)">
+            <summary>
+            接口/Action别名
+            </summary>
+            <param name="alias">接口/Action别名</param>
+        </member>
+        <member name="P:TopShelf.IPO.FP.Extenion.AliasNameAttribute.Alias">
+            <summary>
+            接口/Action别名
+            </summary>
+        </member>
+        <member name="M:TopShelf.IPO.FP.Extenion.CustomHttpControllerSelector.SelectController(System.Net.Http.HttpRequestMessage)">
+            <summary>
+            查找控制器
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="P:TopShelf.IPO.FP.Extenion.HttpControllerExtension.ControllerDescriptor">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:TopShelf.IPO.FP.Extenion.HttpControllerExtension.Action">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:TopShelf.IPO.FP.Extenion.MiddlewareExtensions.Use(System.Action{Owin.IAppBuilder})">
+            <summary>
+            注册中间件
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="func"></param>
+        </member>
+        <member name="F:TopShelf.IPO.FP.SwaggerAttachParams.param">
+            <summary>
+            key=参数名称,value=参数定义
+            </summary>
+        </member>
+        <member name="M:TopShelf.IPO.FP.SwaggerAttachParams.Add(System.String,System.String,System.Boolean,System.String,System.String,System.String)">
+            <summary>
+            给Swagger附加自定义参数
+            </summary>
+            <param name="name">参数名称</param>
+            <param name="postion">参数位置[header、query]</param>
+            <param name="required">是否必填</param>
+            <param name="type">参数类型[string、int等]</param>
+            <param name="description">参数描述</param>
+            <param name="reference">参数引用</param>
+        </member>
+        <member name="P:TopShelf.IPO.FP.SwaggerAttachParams.Parameters">
+            <summary>
+            读取Swagger附加自定义参数
+            </summary>
+        </member>
+        <member name="F:TopShelf.IPO.FP.Filter.Filters.filters">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:TopShelf.IPO.FP.Filter.Filters.UseFilters(System.Web.Http.Filters.HttpFilterCollection)">
+            <summary>
+            
+            </summary>
+            <param name="Filters"></param>
+        </member>
+        <member name="M:TopShelf.IPO.FP.Filter.Filters.Add(System.Web.Http.Filters.IFilter)">
+            <summary>
+            
+            </summary>
+            <param name="filter"></param>
+        </member>
+        <member name="M:TopShelf.IPO.FP.Filter.GlobalExceptionHandler.Handle(System.Web.Http.ExceptionHandling.ExceptionHandlerContext)">
+            <summary>
+            捕获异常处理
+            </summary>
+            <param name="context"></param>
+        </member>
+        <member name="T:TopShelf.IPO.FP.Filter.GlobalExceptionHandler.GlobalExceptionResult">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:TopShelf.IPO.FP.IOC.AutofacConfig.Initialize(System.Web.Http.HttpConfiguration)">
+            <summary>
+            
+            </summary>
+            <param name="config"></param>
+        </member>
+        <member name="M:TopShelf.IPO.FP.IOC.AutofacConfig.RegisterServices(Autofac.ContainerBuilder)">
+            <summary>
+            
+            </summary>
+            <param name="builder"></param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>
