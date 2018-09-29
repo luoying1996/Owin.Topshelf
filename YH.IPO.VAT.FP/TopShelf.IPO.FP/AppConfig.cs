@@ -13,7 +13,6 @@ namespace TopShelf.IPO.FP
     public class AppConfig
     {
         public static AppConfig Default { get; private set; }
-
         static AppConfig()
         {
             Default = Load<AppConfig>();

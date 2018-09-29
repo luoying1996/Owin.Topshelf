@@ -58,7 +58,6 @@ namespace YH.IPO.FP.WebApi
                 oboj["responseMsg"] = oboj["responseMsg"].ToString().RewriteXML();
             }
             return oboj;
-
         }
 
         public static string Base64Decode(Encoding encodeType, string result)
